@@ -1,9 +1,9 @@
 from twisted.python import log
-import stratum3
+import stratum3.server
 import stratum3.settings as settings
 
 # This variable is used as an application handler by twistd 
-application = stratum.setup()
+application = stratum3.server.setup()
 
 from twisted.internet import reactor
 
@@ -13,9 +13,3 @@ def heartbeat():
 
 if settings.DEBUG:
     reactor.callLater(0, heartbeat)
-
-# Load all services from service_repository module.
-try:
-    import service_repository
-except ImportError:
-    print "***** Is service_repository missing? Add service_repository module to your python path!"
