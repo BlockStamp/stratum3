@@ -1,0 +1,21 @@
+Description:
+============
+This is the reimplementation of Stratum protocol for server side from https://github.com/slush0/stratum.
+The implementation bases on python3+ implementation.
+
+Installation
+============
+
+Requirements:
+python 3+
+linux-based system
+
+Following instructions will work on Ubuntu & Debian*:
+
+Startup
+=======
+Start server:
+twistd -ny launcher.tac
+
+Start server *without* lowlevel messages of Twisted:
+twistd -ny launcher.tac -l log/twistd.log
