@@ -1,7 +1,7 @@
 Description:
 ============
 This is the reimplementation of Stratum protocol for server side from https://github.com/slush0/stratum.
-The implementation bases on python3+ implementation.
+The implementation bases on python3+.
 
 Installation
 ============
