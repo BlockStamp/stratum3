@@ -11,5 +11,5 @@ setup(name='stratum3',
       url='https://blockstamp.info',
       packages=['stratum3'],
       zip_safe=False,
-      install_requires=['twisted', 'ecdsa', 'autobahn', 'jsonical']
+      install_requires=['twisted', 'ecdsa', 'autobahn']
      )

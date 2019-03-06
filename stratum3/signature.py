@@ -4,11 +4,9 @@ import base64
 import hashlib
 import time
 import ecdsa
-
-import jsonical
 import json
 
-
+from stratum3 import jsonical
 from stratum3 import exceptions
 
 

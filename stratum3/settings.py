@@ -17,7 +17,7 @@ def setup():
             value = getattr(cfg, varname)
             yield (varname, value)
 
-    import default
+    from stratum3 import default
 
     try:
         import config
